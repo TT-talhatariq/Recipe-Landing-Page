@@ -1,0 +1,102 @@
+@import url("https://fonts.google.com/specimen/Young+Serif");
+
+@import url("https://fonts.google.com/specimen/Outfit");
+
+:root {
+  --nutmeg: hsl(14, 45%, 36%);
+  --dark-raspberry: hsl(332, 51%, 32%);
+  --white: hsl(0, 0%, 100%);
+  --rose-white: hsl(330, 100%, 98%);
+  --egg-shell: hsl(30, 54%, 90%);
+  --light-grey: hsl(30, 18%, 87%);
+  --brown: hsl(30, 10%, 34%);
+  --charcoal: hsl(24, 5%, 18%);
+}
+body {
+  background-color: var(--egg-shell);
+  font-size: 16px;
+  font-family: "Outfit";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px 0px;
+}
+.container {
+  width: 650px;
+  background-color: var(--white);
+  padding: 30px;
+  border-radius: 20px;
+  color: var(--brown);
+}
+.container img {
+  width: 100%;
+}
+.container h1 {
+  font-size: 40px;
+  font-family: "Young Serif";
+  color: black;
+  font-weight: 400;
+}
+.container .box {
+  background-color: var(--rose-white);
+  padding: 20px;
+  border-radius: 10px;
+}
+.container .box h3 {
+  color: var(--dark-raspberry);
+}
+
+.container .box ul {
+  color: var(--dark-raspberry);
+  padding-left: 20px;
+}
+
+.container .box ul li {
+  color: var(--brown);
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+
+.container .box ul li span,
+.instructions-list li span {
+  font-weight: 700;
+}
+h2 {
+  font-family: "Young Serif";
+  color: var(--nutmeg);
+  font-size: 1.8rem;
+}
+
+.ingredients-list,
+.instructions-list {
+  color: var(--nutmeg);
+  padding-left: 20px;
+}
+.ingredients-list li,
+.instructions-list li {
+  color: var(--brown);
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+
+.table .row {
+  border-bottom: 1px solid var(--light-grey);
+  display: flex;
+  padding: 10px;
+}
+
+.table .row span {
+  width: 300px;
+}
+.table .row span:last-child {
+  font-weight: 700;
+  color: var(--nutmeg);
+}
+
+@media all and (max-width: 500px) {
+  .container {
+    width: 400px;
+
+    margin: 20px;
+  }
+}
